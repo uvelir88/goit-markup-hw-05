@@ -125,6 +125,7 @@ img {
 
 .nav-link {
 	color: var(--main-title-cl);
+	transition: color 300ms linear;
 }
 
 .contact-link {
@@ -191,6 +192,7 @@ img {
 	border: none;
 	border-radius: 4px;
 	padding: 10px 32px;
+	transition: color 300ms linear;
 }
 
 .hero-btn:hover,
@@ -321,7 +323,7 @@ img {
 	background-color: transparent;
 	border-radius: 50%;
 	color: #afb1b8;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	margin-top: 16px;
 }
 
@@ -367,7 +369,7 @@ img {
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
 	fill: #afb1b8;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon {
 	width: 106px;
@@ -482,6 +484,28 @@ img {
 	gap: 8px;
 }
 
+.portfolio-top-card {
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-card:hover .portfolio-top-text {
+	transform: translateY(0);
+}
+
+.portfolio-top-text {
+	position: absolute;
+	top: 0;
+	background-color: rgba(33, 150, 243, 0.9);
+	color: #ffffff;
+	font-size: 18px;
+	line-height: calc(28 / 18);
+	letter-spacing: 0.03em;
+	padding: 63px 24px;
+	transform: translateY(100%);
+	transition: transform 300ms linear;
+}
+
 .portfolio-nav-btn {
 	font-family: inherit;
 	font-weight: 500;
@@ -495,12 +519,13 @@ img {
 	border-radius: 4px;
 	background-color: #f5f4fa;
 	padding: 6px 22px;
+	transition: color 300ms linear, background-color 300ms linear;
 }
 
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
 	color: #ffffff;
-	background: #2196f3;
+	background-color: #2196f3;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
 }
